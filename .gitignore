@@ -1,0 +1,34 @@
+# === Real captured data (never commit these) ===
+# These files may contain data from a real machine/real work, not source code
+profiles/*.json
+reference_files/*
+backup/*
+logs/*.jsonl
+gui_config.json
+gui_settings.json
+
+# Keep the folder structure (empty placeholder files) without keeping the contents
+!profiles/.gitkeep
+!reference_files/.gitkeep
+!backup/.gitkeep
+!logs/.gitkeep
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# === PyInstaller build output ===
+src/build/
+src/dist/
+
+# === OS junk files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editor/IDE ===
+.vscode/
+.idea/
